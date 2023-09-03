@@ -11,7 +11,7 @@ const Listado = () => {
 
     const llamadaAPI = async () => {
         try{
-        const llamada = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=100&offset=0`);
+        const llamada = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=0`);
         const datos = await llamada.json();
         // console.log(datos.results)
         setDatosAPI(datos.results);
