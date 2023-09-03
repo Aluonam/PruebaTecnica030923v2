@@ -1,4 +1,6 @@
 import React from 'react'
+import ModalDetalles from './ModalDetalles'
+import Temporizador from './Temporizador'
 
 const Tabla = ({datosAPI}) => {
 
@@ -6,7 +8,7 @@ const Tabla = ({datosAPI}) => {
         return(
                  <tr>
                     <th>{elementoActual.name}</th>
-                    <th>Modal</th>
+                    <th><ModalDetalles nombrePokemon={elementoActual.name}></ModalDetalles></th>
                  </tr>
         )
     })
@@ -14,6 +16,7 @@ const Tabla = ({datosAPI}) => {
 
   return (
     <main>
+        <Temporizador></Temporizador>
     <table>
         <thead>
             <tr>
