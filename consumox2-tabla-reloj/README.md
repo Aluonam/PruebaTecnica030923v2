@@ -1,4 +1,3 @@
-# PruebaTecnica030923v2
 API: https://pokeapi.co/api/v2/pokemon?limit=100&offset=0
 
 •	Listar los pokemos en una tabla que tenga los siguientes campos:
