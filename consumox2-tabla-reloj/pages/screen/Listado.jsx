@@ -3,7 +3,7 @@ import Tabla from '../components/Tabla';
 
 const Listado = () => {
 
-    const [datosAPI, setDatosAPI] = useState()
+    const [datosAPI, setDatosAPI] = useState([])
 
     useEffect(() => {
         llamadaAPI();

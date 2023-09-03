@@ -1,8 +1,31 @@
 import React from 'react'
 
-const Tabla = () => {
+const Tabla = ({datosAPI}) => {
+
+    const datosTabla = datosAPI.map((elementoActual)=>{
+        return(
+                 <tr>
+                    <th>{elementoActual.name}</th>
+                    <th>Modal</th>
+                 </tr>
+        )
+    })
+
+
   return (
-    <div>Tabla</div>
+    <main>
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+            {datosTabla}
+        </tbody>
+    </table>
+    </main>
   )
 }
 
