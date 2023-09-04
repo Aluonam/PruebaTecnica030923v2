@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+mbimport React, { useEffect, useState } from 'react'
 
 const Temporizador = () => {
 
-
+// el nombre del componente deberia ser reloj
+    
     const [hora, setHora] = useState()
 
     useEffect(() => {
